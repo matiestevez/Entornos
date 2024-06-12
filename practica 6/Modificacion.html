@@ -1,0 +1,41 @@
+<!-- FILEPATH: c:\xampp\htdocs\Entornos\modif-ej2.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Modificación</title>
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="container">
+        <h1>FORMULARIO DE ACTUALIZACION DE CIUDAD</h1>
+        <form action="Modificar.php" method="POST" class="border p-3">
+            <div class="form-group mb-3">
+                <div class="form-group mb-3">
+                    <label for="opcion">Campo para dar referencia:</label>
+                    <select class="form-control" id="campo_act" name="campo_act" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="ciudad">Ciudad</option>
+                        <option value="pais">Pais</option>
+                        <option value="habitantes">Habitantes</option>
+                        <option value="superficie">Superficie</option>
+                        <option value="tienemetro">Tiene metro?Indicar Cantidad</option>
+                    </select>
+                </div>
+                <label for="referencia">Valor de referencia:</label>
+                <input type="text" class="form-control" id="referencia" name="referencia" required>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button type="submit" class="my-3 btn btn-primary d-flex align-items-center">Buscar para actualizar</button>
+        </div>
+        </form>
+
+    </div>
+    <!-- Agregamos los scripts de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

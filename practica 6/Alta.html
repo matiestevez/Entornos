@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario alta</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 >FORMULARIO DE ALTA DE CIUDAD</h1>
+            <form action="Alta.php" method="post" class="border p-3">
+                <div class="mb-3">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control " id="ciudad" name="ciudad" required>
+                </div>
+            <div class="mb-3">
+                <label for="pais" class="form-label">País</label>
+                <input type="text" class="form-control" id="pais" name="pais" required>
+            </div>
+            <div class="mb-3">
+                <label for="superficie" class="form-label">Superficie</label>
+                <input type="number" class="form-control" id="superficie" name="superficie" required>
+            </div>
+            <div class="mb-3">
+                <label for="habitantes" class="form-label">Habitantes</label>
+                <input type="number" class="form-control" id="habitantes" name="habitantes" required>
+            </div>
+            <div class="mb-3">
+                <label for="tienemetro" class="form-label">Tiene metro? Indicar cantidad</label>
+                <input type="number" class="form-control" id="tienemetro" name="tienemetro" required>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+
+    </body>
+</html>
